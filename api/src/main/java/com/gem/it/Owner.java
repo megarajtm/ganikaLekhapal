@@ -25,12 +25,10 @@ public class Owner implements HasIdentity,Named {
         this.share = share;
     }
 
-    @Override
     public String getName() {
         return name;
     }
 
-    @Override
     public String getId() {
         return id;
     }

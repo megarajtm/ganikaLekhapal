@@ -12,13 +12,13 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "it_employee")
-public class Employee implements HasIdentity,Named{
+public class Employee implements HasIdentity, Named {
 
     private final String id;
     private final String name;
     private final String designation;
     private final long dateOfJoining;
-    private final  long salary;
+    private final long salary;
 
     public Employee(final String id, final String name, final String designation, final long dateOfJoining, final long salary) {
         this.id = id;
@@ -28,12 +28,10 @@ public class Employee implements HasIdentity,Named{
         this.salary = salary;
     }
 
-    @Override
     public String getId() {
         return id;
     }
 
-    @Override
     public String getName() {
         return name;
     }
